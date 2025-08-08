@@ -26,16 +26,16 @@ To **create an AKS cluster** using a **User Assigned Managed Identity (UAMI)** t
 
 ```bash
 # General settings
-LOCATION="eastus"
-RG_NAME="myResourceGroup"
-AKS_CLUSTER_NAME="myAKSCluster"
+$LOCATION="eastus"
+$RG_NAME="myResourceGroup"
+$AKS_CLUSTER_NAME="myAKSCluster"
 
 # Existing VNet and Subnet
-VNET_NAME="myVnet"
-SUBNET_NAME="mySubnet"
+$VNET_NAME="myVnet"
+$SUBNET_NAME="mySubnet"
 
 # UAMI
-UAMI_NAME="myAksIdentity"
+$UAMI_NAME="myAksIdentity"
 ```
 
 ---
