@@ -43,7 +43,7 @@ $UAMI_NAME="myAksIdentity"
 ### **Step 2: Get subnet ID**
 
 ```bash
-SUBNET_ID=$(az network vnet subnet show \
+$SUBNET_ID=$(az network vnet subnet show \
   --resource-group $RG_NAME \
   --vnet-name $VNET_NAME \
   --name $SUBNET_NAME \
@@ -68,7 +68,7 @@ az identity create \
 ### **Step 4: Get the UAMI resource ID**
 
 ```bash
-UAMI_ID=$(az identity show \
+$UAMI_ID=$(az identity show \
   --name $UAMI_NAME \
   --resource-group $RG_NAME \
   --query id -o tsv)
