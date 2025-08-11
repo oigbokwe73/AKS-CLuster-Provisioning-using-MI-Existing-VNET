@@ -14,6 +14,7 @@ To **create an AKS cluster** using a **User Assigned Managed Identity (UAMI)** t
    ```bash
    az extension add --name aks-preview
    az extension update --name aks-preview
+
    ```
 
 ---
@@ -43,6 +44,7 @@ $UAMI_NAME="myAksIdentity"
 ### **Step 2: Get subnet ID**
 
 ```bash
+az login --identity --username $UAMI_ID
 $SUBNET_ID=$(az network vnet subnet show \
   --resource-group $RG_NAME \
   --vnet-name $VNET_NAME \
