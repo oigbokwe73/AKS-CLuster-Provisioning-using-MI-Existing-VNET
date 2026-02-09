@@ -160,12 +160,3 @@ sudo nano /etc/hosts
 ```
 
 ---
-
-If you want next, I can:
-
-* 🔧 Show **how to avoid host files entirely**
-* 🧠 Explain **kubectl + AKS private DNS resolution**
-* 🛠️ Provide **CI agent DNS fixes**
-* 📐 Draw a **hub-spoke DNS flow diagram**
-
-Just say the word.
